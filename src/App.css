@@ -1,15 +1,40 @@
+body {
+    background-color: #73c3c4;
+}
+
 .editor-input {
-    font-size: 1em;
+    background-color: #8bebeb;
 }
 
-#preview {
-    background-color: #b3fff4;
+.editor-heading {
+    background-color: #42a9ab;
+    border: 1px solid;
+    border-bottom: 0;
+    padding: 5px;
+    width: 622px;
+    margin: 10px 0 0 0;
+    font-weight: bold;
 }
 
-#preview code {
+.preview-heading {
+    background-color: #42a9ab;
+    border: 1px solid;
+    border-bottom: 0;
+    padding: 5px;
+    margin: 10px 0 0 0;
+    font-weight: bold;
+}
+
+.preview {
+    background-color: #8bebeb;
+    border: 1px solid;
+    height: 300px;
+}
+
+.preview code {
     background-color: white;
 }
 
-#preview pre {
+.preview pre {
     background-color: white;
 }

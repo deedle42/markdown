@@ -2,12 +2,13 @@ import React from 'react';
 import Editor from './Editor';
 import Previewer from './Previewer';
 import '../App.css';
-import ReactMarkdown from 'react-markdown';
 
 class App extends React.Component{
     constructor(props) {
         super(props);
-        this.state = {input: ''};
+        const placeholder = 
+        `# Welcome to my React Markdown Previewer!`
+        this.state = {input: `${placeholder}`};
 
         this.handleChange = this.handleChange.bind(this);
     }
@@ -20,8 +21,7 @@ class App extends React.Component{
 
     render() {
         return (
-            <div>
-                App
+            <div className="container">
                 <Editor changeInput={this.handleChange} input={this.state.input} value={this.state.input} />
                 <Previewer input={this.state.input} />
             </div>

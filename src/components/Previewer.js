@@ -5,8 +5,13 @@ class Previewer extends React.Component {
 
     render() {
         return (
-            <div id="preview">
-                <ReactMarkdown source={this.props.input} />
+            <div className="row">
+                <div className="col-2"></div>
+                <div className="col-8">
+                    <h6 className="preview-heading">Preview</h6>
+                    <ReactMarkdown className="preview" source={this.props.input} />
+                </div>
+                <div className="col-2"></div>
             </div>
         )
     }
